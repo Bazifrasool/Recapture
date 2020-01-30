@@ -36,8 +36,10 @@
         android:gravity="start|top"
         android:inputType="textMultiLine"
         app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#FAFFF7F7"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        />
 
     <TextView
         android:id="@+id/textView2"
@@ -45,10 +47,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="(DD/MM/YY)"
-        android:textColor="#DAFFFFFF"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:textColor="#FAFFF7F7"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button

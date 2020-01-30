@@ -17,12 +17,16 @@ public class Quiz_Page_1 extends AppCompatActivity {
     {
         EditText dt = (EditText) findViewById(R.id.editText2);
         String s = dt.getText().toString();
-        String dtx =  "30/01/20";
-        if(s==dtx)
+        String dtx =  "30/01/20";String dxr =  "ayes";
+
+        if(s.equals(dtx))
         {
             //increment score
+            dt.setText("Gello");
         }
-        dt.setText("yes");
+        else {
+            dt.setText(dtx);
+        }
     }
 
 }

@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Recapture</string>
     <string name="Question_1">Can you write Today\'s Date ?</string>
+    <string name="Question_2">Q2</string>
 </resources>
