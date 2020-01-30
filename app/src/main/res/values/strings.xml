@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Recapture_V_0</string>
+    <string name="app_name">Recapture</string>
+    <string name="Question_1">Can you write Today\'s Date ?</string>
 </resources>
