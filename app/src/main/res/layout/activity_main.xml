@@ -10,32 +10,33 @@
         android:id="@+id/Play_button"
         android:layout_width="173dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="13dp"
+        android:layout_marginBottom="12dp"
         android:text="Play"
         app:layout_constraintBottom_toTopOf="@+id/Help_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/Help_button"
         android:layout_width="173dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="buttonclick"
         android:text="Help"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:scaleType="centerInside"
-        android:scaleX="1.2"
-        android:scaleY="1.2"
-        android:src="@drawable/doc"
+        android:scaleType="fitCenter"
+        android:scaleX="1.25"
+        android:scaleY="1.25"
+        android:src="@drawable/brain"
+        android:translationX="0dp"
+        android:translationY="-50dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
