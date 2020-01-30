@@ -13,9 +13,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-   public  void buttonclick(View view)
+    public  void buttonclickyourself(View view)
     {
         Intent intent = new Intent(this,Quiz_Page_1.class);
+        startActivity(intent);
+    }
+    public  void buttonclickfriend(View view)
+    {
+        Intent intent = new Intent(this,Friend_Quiz_1.class);
         startActivity(intent);
     }
 
