@@ -47,6 +47,7 @@
         android:paddingLeft="32dp"
         android:paddingRight="32dp"
         android:text="Does your loved one have memory loss?"
+        android:textAlignment="center"
         android:textColor="#FAFFF7F7"
         android:textIsSelectable="false"
         app:layout_constraintEnd_toEndOf="parent"
