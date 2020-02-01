@@ -30,6 +30,7 @@ public class Quiz_Page_1 extends AppCompatActivity {
     {
         EditText dt = findViewById(R.id.editText2);
         TextView tv = findViewById(R.id.textView);
+        TextView tv2 = findViewById(R.id.textView2);
         //
         if (question_no == Ques_arr.length - 1) {
             Intent new_pg = new Intent(this, Quiz_page_3.class);
@@ -41,6 +42,7 @@ public class Quiz_Page_1 extends AppCompatActivity {
             SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
             String current_dt = sdf.format(new Date());
             String edittextget = dt.getText().toString();
+            tv2.setVisibility(View.INVISIBLE);
             if (edittextget.equals(current_dt)) {
                 first_click = false;
                 score_is++;
@@ -52,6 +54,7 @@ public class Quiz_Page_1 extends AppCompatActivity {
                 tv.setText(Ques_arr[question_no]);
             }
         } else {
+
             String User_ans = dt.getText().toString();
             if (question_no < Ques_arr.length - 1) {
                 if (User_ans.equals(Ans_arr[question_no])) {
@@ -67,4 +70,4 @@ public class Quiz_Page_1 extends AppCompatActivity {
         }
 
 
-}
+}   //angel.co
