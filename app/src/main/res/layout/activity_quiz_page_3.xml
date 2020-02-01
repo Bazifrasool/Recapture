@@ -20,7 +20,7 @@
         android:fontFamily="sans-serif-condensed-medium"
         android:paddingLeft="32dp"
         android:paddingRight="32dp"
-        android:text="Select The desert you should not eat"
+        android:text="Select The item you should not eat"
         android:textColor="#FAFFF7F7"
         android:textIsSelectable="false"
         app:layout_constraintEnd_toEndOf="parent"
