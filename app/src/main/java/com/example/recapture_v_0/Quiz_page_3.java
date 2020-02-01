@@ -51,6 +51,7 @@ public class Quiz_page_3 extends AppCompatActivity {
             op3.setText("Megan likes long hair. Jane has long hair.");
             op4.setText("Megan’s hair is not blonde.");
             Ques_no++;
+            return;
 
 
         }
@@ -73,6 +74,10 @@ public class Quiz_page_3 extends AppCompatActivity {
         }
         if (Ques_no == 2 && !op1.isChecked() && !op2.isChecked() && op3.isChecked() && !op4.isChecked()) {
             score__mcq++;
+
+        }
+        if (Ques_no == 2) {
+            ques.setText(Integer.toString(score__mcq));
         }
 
 
