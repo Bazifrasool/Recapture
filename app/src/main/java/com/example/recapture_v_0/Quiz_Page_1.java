@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -19,24 +20,51 @@ public class Quiz_Page_1 extends AppCompatActivity {
     }
 
     protected int score_is = 0;
+    protected int question_no = -1;
+    protected boolean first_click = true;
     //Enter typing questions on this page
     String[] Ques_arr = {"You are buying Rs. 13.45 of groceries. How much change would you receive back from a Rs. 20 bill?"
             , "Can the given words be rearranged to form a complete sentence? a legs has eight spider .(Type \"yes\" or \"no\""};
-
+    String[] Ans_arr = {"6.55", "yes"};
     public void nextbutton(View view)
     {
         EditText dt = findViewById(R.id.editText2);
+        TextView tv = findViewById(R.id.textView);
         //
-        SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
-        String current_dt = sdf.format(new Date());
-
-        if (current_dt.equals(dt))
-        {
-            score_is++;
+        if (question_no == Ques_arr.length - 1) {
+            Intent new_pg = new Intent(this, Quiz_page_3.class);
+            startActivity(new_pg);
         }
 
-        Intent int_page = new Intent(this, Quiz_page_3.class);
-        startActivity(int_page);
-    }
+        if (first_click)
+        {
+            SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
+            String current_dt = sdf.format(new Date());
+            String edittextget = dt.getText().toString();
+            if (edittextget.equals(current_dt)) {
+                first_click = false;
+                score_is++;
+                question_no++;
+                tv.setText(Ques_arr[question_no]);
+            } else {
+                first_click = false;
+                question_no++;
+                tv.setText(Ques_arr[question_no]);
+            }
+        } else {
+            String User_ans = dt.getText().toString();
+            if (question_no < Ques_arr.length - 1) {
+                if (User_ans.equals(Ans_arr[question_no])) {
+                    question_no++;
+                    score_is++;
+                    tv.setText(Ques_arr[question_no]);
+                } else {
+                    question_no++;
+                    tv.setText(Ques_arr[question_no]);
+                }
+            }
+        }
+        }
+
 
 }
