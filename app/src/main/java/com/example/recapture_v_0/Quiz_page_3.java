@@ -1,6 +1,7 @@
 package com.example.recapture_v_0;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,10 +16,13 @@ public class Quiz_page_3 extends AppCompatActivity {
     protected int Ques_no = 0;
     protected int score__mcq = 0;
     protected boolean final_question = false;
+    private int scr_prev = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz_page_3);
+        Intent m_intent = getIntent();
+        scr_prev = m_intent.getIntExtra("Main_score", 0);
     }
 
     public void McQ_button(View view) {
@@ -83,7 +87,8 @@ public class Quiz_page_3 extends AppCompatActivity {
         }
 
         if (final_question) {
-            ques.setText(Integer.toString(Ques_no));
+            score__mcq = score__mcq + scr_prev;
+            ques.setText(Integer.toString(score__mcq));
             op1.setVisibility(View.INVISIBLE);
             op3.setVisibility(View.INVISIBLE);
             op4.setVisibility(View.INVISIBLE);

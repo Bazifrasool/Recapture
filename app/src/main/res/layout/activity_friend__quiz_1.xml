@@ -12,25 +12,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="22dp"
-        android:layout_marginTop="264dp"
         android:layout_marginEnd="68dp"
-        android:text="Yes"
+        android:layout_marginBottom="64dp"
         android:onClick="Yes_button"
+        android:text="Yes"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="264dp"
         android:layout_marginEnd="9dp"
-        android:text="No"
+        android:layout_marginBottom="64dp"
         android:onClick="No_button"
+        android:text="No"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintStart_toEndOf="@+id/button2" />
 
 
     <TextView
@@ -43,7 +43,7 @@
         android:autoSizeMaxTextSize="100sp"
         android:autoSizeMinTextSize="8sp"
         android:autoSizeTextType="uniform"
-        android:fontFamily="sans-serif-condensed-medium"
+        android:fontFamily="@font/comfortaa_regular"
         android:paddingLeft="32dp"
         android:paddingRight="32dp"
         android:text="Does your loved one have memory loss?"

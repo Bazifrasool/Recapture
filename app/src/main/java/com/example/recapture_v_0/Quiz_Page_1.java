@@ -13,6 +13,7 @@ import java.util.Date;
 
 public class Quiz_Page_1 extends AppCompatActivity {
 
+    private int Main_score = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +35,7 @@ public class Quiz_Page_1 extends AppCompatActivity {
         //
         if (question_no == Ques_arr.length - 1) {
             Intent new_pg = new Intent(this, Quiz_page_3.class);
+            new_pg.putExtra("Main_score", score_is);
             startActivity(new_pg);
         }
 

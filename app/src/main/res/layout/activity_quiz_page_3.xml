@@ -18,7 +18,7 @@
         android:autoSizeMaxTextSize="100sp"
         android:autoSizeMinTextSize="8sp"
         android:autoSizeTextType="uniform"
-        android:fontFamily="sans-serif-condensed-medium"
+        android:fontFamily="@font/comfortaa_regular"
         android:paddingLeft="32dp"
         android:paddingRight="32dp"
         android:text="Which item you shouldn't eat?"
@@ -34,6 +34,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="14dp"
+        android:fontFamily="@font/comfortaa_thin"
         android:text="Dessert"
         android:textColor="#FAFFF7F7"
         app:layout_constraintBottom_toTopOf="@+id/checkBox5"
@@ -46,6 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="11dp"
+        android:fontFamily="@font/comfortaa_thin"
         android:text="Desert"
         android:textColor="#FAFFF7F7"
         app:layout_constraintBottom_toTopOf="@+id/checkBox"
@@ -57,6 +59,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="12dp"
+        android:fontFamily="@font/comfortaa_thin"
         android:text="Flan"
         android:textColor="#FAFFF7F7"
         app:layout_constraintBottom_toTopOf="@+id/checkBox6"
@@ -69,6 +72,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="11dp"
+        android:fontFamily="@font/comfortaa_thin"
         android:text="Mousse"
         android:textColor="#FAFFF7F7"
         app:layout_constraintBottom_toTopOf="@+id/button4"
@@ -84,8 +88,7 @@
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox6" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
