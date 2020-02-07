@@ -3,6 +3,7 @@ package com.example.recapture_v_0;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -13,6 +14,7 @@ public class Quiz_page_3 extends AppCompatActivity {
 
     protected int Ques_no = 0;
     protected int score__mcq = 0;
+    protected boolean final_question = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +28,7 @@ public class Quiz_page_3 extends AppCompatActivity {
         CheckBox op2 = findViewById(R.id.checkBox2);
         CheckBox op3 = findViewById(R.id.checkBox5);
         CheckBox op4 = findViewById(R.id.checkBox6);
+        Button b0 = findViewById(R.id.button4);
         if (!op2.isChecked() && !op1.isChecked() && !op3.isChecked() && !op4.isChecked()) {
             //empty
             //display a toast
@@ -74,13 +77,24 @@ public class Quiz_page_3 extends AppCompatActivity {
         }
         if (Ques_no == 2 && !op1.isChecked() && !op2.isChecked() && op3.isChecked() && !op4.isChecked()) {
             score__mcq++;
+            Ques_no++;
+
 
         }
+
+        if (final_question) {
+            ques.setText(Integer.toString(Ques_no));
+            op1.setVisibility(View.INVISIBLE);
+            op3.setVisibility(View.INVISIBLE);
+            op4.setVisibility(View.INVISIBLE);
+            op2.setVisibility(View.INVISIBLE);
+            b0.setText("Exit");
+
+        }
+
         if (Ques_no == 2) {
-            ques.setText(Integer.toString(score__mcq));
+            final_question = true;
         }
-
-
 
     }
 
