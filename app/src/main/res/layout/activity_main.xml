@@ -8,22 +8,22 @@
 
     <Button
         android:id="@+id/Play_button"
-        android:layout_width="173dp"
-        android:layout_height="48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="12dp"
-        android:text="Play for Yourself"
         android:onClick="buttonclickyourself"
+        android:text="Play for Yourself"
         app:layout_constraintBottom_toTopOf="@+id/Help_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/Help_button"
-        android:layout_width="173dp"
-        android:layout_height="48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
-        android:text="Play for a Friend"
         android:onClick="buttonclickfriend"
+        android:text="Play for a Friend"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -33,9 +33,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleType="fitCenter"
-        android:scaleX="1.25"
-        android:scaleY="1.25"
-        android:src="@drawable/brain"
+        android:scaleX="1.1"
+        android:scaleY="1.1"
+        android:src="@drawable/brain_2"
         android:translationX="0dp"
         android:translationY="-50dp"
         app:layout_constraintStart_toStartOf="parent"

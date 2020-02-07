@@ -96,6 +96,12 @@ public class Quiz_page_3 extends AppCompatActivity {
             b0.setText("Exit");
 
         }
+        if ((b0.getText().toString()).equals("Exit")) {
+            /*
+            finish();
+            System.exit(0);
+            */
+        }
 
         if (Ques_no == 2) {
             final_question = true;
