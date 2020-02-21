@@ -87,13 +87,9 @@ public class Quiz_page_3 extends AppCompatActivity {
         }
 
         if (final_question) {
-            score__mcq = score__mcq + scr_prev;
-            ques.setText(Integer.toString(score__mcq));
-            op1.setVisibility(View.INVISIBLE);
-            op3.setVisibility(View.INVISIBLE);
-            op4.setVisibility(View.INVISIBLE);
-            op2.setVisibility(View.INVISIBLE);
-            b0.setText("Exit");
+            Intent pictqz = new Intent(this,Quiz_Page_2.class);
+            pictqz.putExtra("score_till_now",score__mcq+scr_prev);
+            startActivity(pictqz);
 
         }
         if ((b0.getText().toString()).equals("Exit")) {
