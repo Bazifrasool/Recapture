@@ -20,7 +20,7 @@ public class Quiz_Page_1 extends AppCompatActivity {
         setContentView(R.layout.activity_quiz__page_1);
     }
 
-    protected int score_is = 0;
+    public int score_is ;
     protected int question_no = -1;
     protected boolean first_click = true;
     //Enter typing questions on this page
@@ -35,7 +35,7 @@ public class Quiz_Page_1 extends AppCompatActivity {
         //
         if (question_no == Ques_arr.length - 1) {
             Intent new_pg = new Intent(this, Quiz_page_3.class);
-            new_pg.putExtra("Main_score", score_is);
+            new_pg.putExtra("Main_score", score_is+1);
             startActivity(new_pg);
         }
 
@@ -50,10 +50,12 @@ public class Quiz_Page_1 extends AppCompatActivity {
                 score_is++;
                 question_no++;
                 tv.setText(Ques_arr[question_no]);
+                dt.setText("");
             } else {
                 first_click = false;
                 question_no++;
                 tv.setText(Ques_arr[question_no]);
+                dt.setText("");
             }
         } else {
 
@@ -63,9 +65,11 @@ public class Quiz_Page_1 extends AppCompatActivity {
                     question_no++;
                     score_is++;
                     tv.setText(Ques_arr[question_no]);
+                    dt.setText("");
                 } else {
                     question_no++;
                     tv.setText(Ques_arr[question_no]);
+                    dt.setText("");
                 }
             }
         }

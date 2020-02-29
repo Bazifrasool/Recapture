@@ -46,7 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/comfortaa_thin"
-        android:text="(DD-MM-YY)"
+        android:text="(DD.MM.YYYY)"
         android:textColor="#FAFFF7F7"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
