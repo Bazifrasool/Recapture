@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+// add biographical questions
+// add genotypical data
+
 public class MainActivity extends AppCompatActivity {
 
     @Override

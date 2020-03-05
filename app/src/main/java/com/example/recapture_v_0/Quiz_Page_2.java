@@ -54,7 +54,7 @@ public class Quiz_Page_2 extends AppCompatActivity {
         Ques[2] = "Which of these is man-made";
         Score_of_picture_mcq = prev_scr.getIntExtra("score_till_now",0);
         Log.w("picture", String.valueOf(Score_of_picture_mcq));
-        pq.setText(String.valueOf(Score_of_picture_mcq));
+
     }
 
     public void clk_img1 (View view)
@@ -101,7 +101,9 @@ public class Quiz_Page_2 extends AppCompatActivity {
 
         if (Ques_no==4)
         {
-            pq.setText(String.valueOf(Score_of_picture_mcq));
+            Intent Final_act  = new Intent(this,Genotype.class);
+            Final_act.putExtra("skr",Score_of_picture_mcq);
+            startActivity(Final_act);
         }
     }
 
@@ -146,9 +148,11 @@ public class Quiz_Page_2 extends AppCompatActivity {
             iv_o4.setImageResource(R.drawable.q4_4);
         }
 
-        if (Ques_no==4 && Score_of_picture_mcq==4)
+        if (Ques_no==4 )
         {
-            pq.setText(String.valueOf(Score_of_picture_mcq));
+            Intent Final_act  = new Intent(this,Genotype.class);
+            Final_act.putExtra("skr",Score_of_picture_mcq);
+            startActivity(Final_act);
         }
     }
 
@@ -194,7 +198,9 @@ public class Quiz_Page_2 extends AppCompatActivity {
 
         if (Ques_no==4)
         {
-            pq.setText(String.valueOf(Score_of_picture_mcq));
+            Intent Final_act  = new Intent(this,Genotype.class);
+            Final_act.putExtra("skr",Score_of_picture_mcq);
+            startActivity(Final_act);
         }
     }
 
@@ -243,7 +249,9 @@ public class Quiz_Page_2 extends AppCompatActivity {
         if (Ques_no==4)
         {
 
-            pq.setText(String.valueOf(Score_of_picture_mcq));
+            Intent Final_act  = new Intent(this,Genotype.class);
+            Final_act.putExtra("skr",Score_of_picture_mcq);
+            startActivity(Final_act);
         }
     }
 

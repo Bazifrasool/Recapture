@@ -3,4 +3,8 @@
     <string name="Question_1">Can you write Today\'s Date ?</string>
     <string name="Question_2">Q2</string>
     <string name="MCQ_1">This quesion is mcq</string>
+    <string-array name="spinner_vals">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
 </resources>
