@@ -1,2 +1,2 @@
 # Recapture
-App for Alzhimer's test
+App for Alzhimer' assessment using a Quiz
